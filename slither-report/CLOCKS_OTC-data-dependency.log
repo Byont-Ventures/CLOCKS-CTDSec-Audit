@@ -1,0 +1,2344 @@
+Compilation warnings/errors on /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol
+
+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+Contract SafeERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function safeTransfer(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeTransferFrom(IERC20,address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|   from   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeApprove(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+| spender  |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeIncreaseAllowance(IERC20,address,uint256)
++--------------+---------------------------------------+
+|   Variable   |              Dependencies             |
++--------------+---------------------------------------+
+|    token     |                   []                  |
+|   spender    |                   []                  |
+|    value     |                   []                  |
+| newAllowance | ['this', 'token', 'spender', 'value'] |
++--------------+---------------------------------------+
+Function safeDecreaseAllowance(IERC20,address,uint256)
++--------------+-------------------------------------------------------+
+|   Variable   |                      Dependencies                     |
++--------------+-------------------------------------------------------+
+|    token     |                           []                          |
+|   spender    |                           []                          |
+|    value     |                           []                          |
+| oldAllowance |              ['this', 'token', 'spender']             |
+| newAllowance | ['token', 'this', 'oldAllowance', 'spender', 'value'] |
++--------------+-------------------------------------------------------+
+Function _callOptionalReturn(IERC20,bytes)
++------------+--------------------------------------------+
+|  Variable  |                Dependencies                |
++------------+--------------------------------------------+
+|   token    |                 ['token']                  |
+|    data    |                     []                     |
+| returndata | ['token', 'Address', 'data', 'returndata'] |
++------------+--------------------------------------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+Contract SafeERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function safeTransfer(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeTransferFrom(IERC20,address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|   from   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeApprove(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+| spender  |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeIncreaseAllowance(IERC20,address,uint256)
++--------------+---------------------------------------+
+|   Variable   |              Dependencies             |
++--------------+---------------------------------------+
+|    token     |                   []                  |
+|   spender    |                   []                  |
+|    value     |                   []                  |
+| newAllowance | ['this', 'token', 'spender', 'value'] |
++--------------+---------------------------------------+
+Function safeDecreaseAllowance(IERC20,address,uint256)
++--------------+-------------------------------------------------------+
+|   Variable   |                      Dependencies                     |
++--------------+-------------------------------------------------------+
+|    token     |                           []                          |
+|   spender    |                           []                          |
+|    value     |                           []                          |
+| oldAllowance |              ['this', 'token', 'spender']             |
+| newAllowance | ['token', 'this', 'oldAllowance', 'spender', 'value'] |
++--------------+-------------------------------------------------------+
+Function _callOptionalReturn(IERC20,bytes)
++------------+--------------------------------------------+
+|  Variable  |                Dependencies                |
++------------+--------------------------------------------+
+|   token    |                 ['token']                  |
+|    data    |                     []                     |
+| returndata | ['token', 'Address', 'data', 'returndata'] |
++------------+--------------------------------------------+
+Contract Context
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function _msgSender()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function _msgData()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+Contract SafeERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function safeTransfer(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeTransferFrom(IERC20,address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|   from   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeApprove(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+| spender  |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeIncreaseAllowance(IERC20,address,uint256)
++--------------+---------------------------------------+
+|   Variable   |              Dependencies             |
++--------------+---------------------------------------+
+|    token     |                   []                  |
+|   spender    |                   []                  |
+|    value     |                   []                  |
+| newAllowance | ['this', 'token', 'spender', 'value'] |
++--------------+---------------------------------------+
+Function safeDecreaseAllowance(IERC20,address,uint256)
++--------------+-------------------------------------------------------+
+|   Variable   |                      Dependencies                     |
++--------------+-------------------------------------------------------+
+|    token     |                           []                          |
+|   spender    |                           []                          |
+|    value     |                           []                          |
+| oldAllowance |              ['this', 'token', 'spender']             |
+| newAllowance | ['token', 'this', 'oldAllowance', 'spender', 'value'] |
++--------------+-------------------------------------------------------+
+Function _callOptionalReturn(IERC20,bytes)
++------------+--------------------------------------------+
+|  Variable  |                Dependencies                |
++------------+--------------------------------------------+
+|   token    |                 ['token']                  |
+|    data    |                     []                     |
+| returndata | ['token', 'Address', 'data', 'returndata'] |
++------------+--------------------------------------------+
+Contract Context
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function _msgSender()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function _msgData()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Contract Pausable
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| _paused  | ['_paused']  |
++----------+--------------+
+
+Function constructor()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function paused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+|                  |      []      |
+| Pausable._paused | ['_paused']  |
++------------------+--------------+
+Function _pause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function _unpause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenNotPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+Contract SafeERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function safeTransfer(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeTransferFrom(IERC20,address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|   from   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeApprove(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+| spender  |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeIncreaseAllowance(IERC20,address,uint256)
++--------------+---------------------------------------+
+|   Variable   |              Dependencies             |
++--------------+---------------------------------------+
+|    token     |                   []                  |
+|   spender    |                   []                  |
+|    value     |                   []                  |
+| newAllowance | ['this', 'token', 'spender', 'value'] |
++--------------+---------------------------------------+
+Function safeDecreaseAllowance(IERC20,address,uint256)
++--------------+-------------------------------------------------------+
+|   Variable   |                      Dependencies                     |
++--------------+-------------------------------------------------------+
+|    token     |                           []                          |
+|   spender    |                           []                          |
+|    value     |                           []                          |
+| oldAllowance |              ['this', 'token', 'spender']             |
+| newAllowance | ['token', 'this', 'oldAllowance', 'spender', 'value'] |
++--------------+-------------------------------------------------------+
+Function _callOptionalReturn(IERC20,bytes)
++------------+--------------------------------------------+
+|  Variable  |                Dependencies                |
++------------+--------------------------------------------+
+|   token    |                 ['token']                  |
+|    data    |                     []                     |
+| returndata | ['token', 'Address', 'data', 'returndata'] |
++------------+--------------------------------------------+
+Contract Context
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function _msgSender()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function _msgData()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Contract Pausable
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| _paused  | ['_paused']  |
++----------+--------------+
+
+Function constructor()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function paused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+|                  |      []      |
+| Pausable._paused | ['_paused']  |
++------------------+--------------+
+Function _pause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function _unpause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenNotPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Contract ReentrancyGuard
++--------------+-----------------------------------------+
+|   Variable   |               Dependencies              |
++--------------+-----------------------------------------+
+| _NOT_ENTERED |             ['_NOT_ENTERED']            |
+|   _ENTERED   |               ['_ENTERED']              |
+|   _status    | ['_NOT_ENTERED', '_ENTERED', '_status'] |
++--------------+-----------------------------------------+
+
+Function constructor()
++------------------------------+------------------+
+|           Variable           |   Dependencies   |
++------------------------------+------------------+
+| ReentrancyGuard._NOT_ENTERED | ['_NOT_ENTERED'] |
+|   ReentrancyGuard._ENTERED   |        []        |
+|   ReentrancyGuard._status    | ['_NOT_ENTERED'] |
++------------------------------+------------------+
+Function slitherConstructorConstantVariables()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
++------------------------------+--------------+
+Function nonReentrant()
++------------------------------+-----------------------------------------+
+|           Variable           |               Dependencies              |
++------------------------------+-----------------------------------------+
+| ReentrancyGuard._NOT_ENTERED |             ['_NOT_ENTERED']            |
+|   ReentrancyGuard._ENTERED   |               ['_ENTERED']              |
+|   ReentrancyGuard._status    | ['_NOT_ENTERED', '_ENTERED', '_status'] |
++------------------------------+-----------------------------------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+Contract SafeERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function safeTransfer(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeTransferFrom(IERC20,address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|   from   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeApprove(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+| spender  |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeIncreaseAllowance(IERC20,address,uint256)
++--------------+---------------------------------------+
+|   Variable   |              Dependencies             |
++--------------+---------------------------------------+
+|    token     |                   []                  |
+|   spender    |                   []                  |
+|    value     |                   []                  |
+| newAllowance | ['this', 'token', 'spender', 'value'] |
++--------------+---------------------------------------+
+Function safeDecreaseAllowance(IERC20,address,uint256)
++--------------+-------------------------------------------------------+
+|   Variable   |                      Dependencies                     |
++--------------+-------------------------------------------------------+
+|    token     |                           []                          |
+|   spender    |                           []                          |
+|    value     |                           []                          |
+| oldAllowance |              ['this', 'token', 'spender']             |
+| newAllowance | ['token', 'this', 'oldAllowance', 'spender', 'value'] |
++--------------+-------------------------------------------------------+
+Function _callOptionalReturn(IERC20,bytes)
++------------+--------------------------------------------+
+|  Variable  |                Dependencies                |
++------------+--------------------------------------------+
+|   token    |                 ['token']                  |
+|    data    |                     []                     |
+| returndata | ['token', 'Address', 'data', 'returndata'] |
++------------+--------------------------------------------+
+Contract Context
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function _msgSender()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function _msgData()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Contract Pausable
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| _paused  | ['_paused']  |
++----------+--------------+
+
+Function constructor()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function paused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+|                  |      []      |
+| Pausable._paused | ['_paused']  |
++------------------+--------------+
+Function _pause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function _unpause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenNotPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Contract ReentrancyGuard
++--------------+-----------------------------------------+
+|   Variable   |               Dependencies              |
++--------------+-----------------------------------------+
+| _NOT_ENTERED |             ['_NOT_ENTERED']            |
+|   _ENTERED   |               ['_ENTERED']              |
+|   _status    | ['_NOT_ENTERED', '_ENTERED', '_status'] |
++--------------+-----------------------------------------+
+
+Function constructor()
++------------------------------+------------------+
+|           Variable           |   Dependencies   |
++------------------------------+------------------+
+| ReentrancyGuard._NOT_ENTERED | ['_NOT_ENTERED'] |
+|   ReentrancyGuard._ENTERED   |        []        |
+|   ReentrancyGuard._status    | ['_NOT_ENTERED'] |
++------------------------------+------------------+
+Function slitherConstructorConstantVariables()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
++------------------------------+--------------+
+Function nonReentrant()
++------------------------------+-----------------------------------------+
+|           Variable           |               Dependencies              |
++------------------------------+-----------------------------------------+
+| ReentrancyGuard._NOT_ENTERED |             ['_NOT_ENTERED']            |
+|   ReentrancyGuard._ENTERED   |               ['_ENTERED']              |
+|   ReentrancyGuard._status    | ['_NOT_ENTERED', '_ENTERED', '_status'] |
++------------------------------+-----------------------------------------+
+Contract Timer
++-----------------------+---------------------------+
+|        Variable       |        Dependencies       |
++-----------------------+---------------------------+
+| minimumWindowDuration | ['minimumWindowDuration'] |
++-----------------------+---------------------------+
+
+Function setWindow(Timer.Window,uint256,uint256)
++-----------------------------+------------------------------------------+
+|           Variable          |               Dependencies               |
++-----------------------------+------------------------------------------+
+|         windowToSet         | ['windowToSet', 'startTime', 'stopTime'] |
+|          startTime          |                    []                    |
+|           stopTime          |                    []                    |
+|         oldStartTime        |             ['windowToSet']              |
+|         oldStopTime         |             ['windowToSet']              |
+| Timer.minimumWindowDuration |        ['minimumWindowDuration']         |
++-----------------------------+------------------------------------------+
+Function currentTimeIsInWindow(Timer.Window)
++-----------------------------+---------------------+
+|           Variable          |     Dependencies    |
++-----------------------------+---------------------+
+|            window           |      ['window']     |
+|                             |          []         |
+|         currentTime         | ['block.timestamp'] |
+| Timer.minimumWindowDuration |          []         |
++-----------------------------+---------------------+
+Function slitherConstructorConstantVariables()
++-----------------------------+--------------+
+|           Variable          | Dependencies |
++-----------------------------+--------------+
+| Timer.minimumWindowDuration |      []      |
++-----------------------------+--------------+
+
+Contract IERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function totalSupply()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function balanceOf(address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| account  |      []      |
+|          |      []      |
++----------+--------------+
+Function transfer(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function allowance(address,address)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  owner   |      []      |
+| spender  |      []      |
+|          |      []      |
++----------+--------------+
+Function approve(address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| spender  |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Function transferFrom(address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|   from   |      []      |
+|    to    |      []      |
+|  amount  |      []      |
+|          |      []      |
++----------+--------------+
+Contract Address
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function isContract(address)
++----------+-----------------------+
+| Variable |      Dependencies     |
++----------+-----------------------+
+| account  | ['account', 'target'] |
+|          |           []          |
++----------+-----------------------+
+Function sendValue(address,uint256)
++-----------+------------------------------------+
+|  Variable |            Dependencies            |
++-----------+------------------------------------+
+| recipient |                 []                 |
+|   amount  |                 []                 |
+|  success  | ['recipient', 'TUPLE_0', 'amount'] |
++-----------+------------------------------------+
+Function functionCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCall(address,bytes,string)
++--------------+--------------+
+|   Variable   | Dependencies |
++--------------+--------------+
+|    target    |  ['target']  |
+|     data     |   ['data']   |
+| errorMessage |      []      |
+|              |      []      |
++--------------+--------------+
+Function functionCallWithValue(address,bytes,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|  value   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionCallWithValue(address,bytes,uint256,string)
++--------------+----------------------------------------+
+|   Variable   |              Dependencies              |
++--------------+----------------------------------------+
+|    target    |               ['target']               |
+|     data     |                ['data']                |
+|    value     |               ['value']                |
+| errorMessage |            ['errorMessage']            |
+|              |                   []                   |
+|   success    | ['target', 'data', 'TUPLE_1', 'value'] |
+|  returndata  | ['target', 'data', 'TUPLE_1', 'value'] |
++--------------+----------------------------------------+
+Function functionStaticCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionStaticCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['target', 'data', 'TUPLE_2'] |
+|  returndata  | ['target', 'data', 'TUPLE_2'] |
++--------------+-------------------------------+
+Function functionDelegateCall(address,bytes)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  target  |      []      |
+|   data   |      []      |
+|          |      []      |
++----------+--------------+
+Function functionDelegateCall(address,bytes,string)
++--------------+-------------------------------+
+|   Variable   |          Dependencies         |
++--------------+-------------------------------+
+|    target    |           ['target']          |
+|     data     |            ['data']           |
+| errorMessage |               []              |
+|              |               []              |
+|   success    | ['TUPLE_3', 'target', 'data'] |
+|  returndata  | ['TUPLE_3', 'target', 'data'] |
++--------------+-------------------------------+
+Function verifyCallResult(bool,bytes,string)
++--------------+------------------+
+|   Variable   |   Dependencies   |
++--------------+------------------+
+|   success    |   ['success']    |
+|  returndata  |  ['returndata']  |
+| errorMessage | ['errorMessage'] |
+|              |        []        |
++--------------+------------------+
+Contract SafeERC20
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function safeTransfer(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeTransferFrom(IERC20,address,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+|   from   |      []      |
+|    to    |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeApprove(IERC20,address,uint256)
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|  token   |      []      |
+| spender  |      []      |
+|  value   |      []      |
++----------+--------------+
+Function safeIncreaseAllowance(IERC20,address,uint256)
++--------------+---------------------------------------+
+|   Variable   |              Dependencies             |
++--------------+---------------------------------------+
+|    token     |                   []                  |
+|   spender    |                   []                  |
+|    value     |                   []                  |
+| newAllowance | ['this', 'token', 'spender', 'value'] |
++--------------+---------------------------------------+
+Function safeDecreaseAllowance(IERC20,address,uint256)
++--------------+-------------------------------------------------------+
+|   Variable   |                      Dependencies                     |
++--------------+-------------------------------------------------------+
+|    token     |                           []                          |
+|   spender    |                           []                          |
+|    value     |                           []                          |
+| oldAllowance |              ['this', 'token', 'spender']             |
+| newAllowance | ['token', 'this', 'oldAllowance', 'spender', 'value'] |
++--------------+-------------------------------------------------------+
+Function _callOptionalReturn(IERC20,bytes)
++------------+--------------------------------------------+
+|  Variable  |                Dependencies                |
++------------+--------------------------------------------+
+|   token    |                 ['token']                  |
+|    data    |                     []                     |
+| returndata | ['token', 'Address', 'data', 'returndata'] |
++------------+--------------------------------------------+
+Contract Context
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
++----------+--------------+
+
+Function _msgSender()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Function _msgData()
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+|          |      []      |
++----------+--------------+
+Contract Pausable
++----------+--------------+
+| Variable | Dependencies |
++----------+--------------+
+| _paused  | ['_paused']  |
++----------+--------------+
+
+Function constructor()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function paused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+|                  |      []      |
+| Pausable._paused | ['_paused']  |
++------------------+--------------+
+Function _pause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function _unpause()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenNotPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Function whenPaused()
++------------------+--------------+
+|     Variable     | Dependencies |
++------------------+--------------+
+| Pausable._paused |      []      |
++------------------+--------------+
+Contract ReentrancyGuard
++--------------+-----------------------------------------+
+|   Variable   |               Dependencies              |
++--------------+-----------------------------------------+
+| _NOT_ENTERED |             ['_NOT_ENTERED']            |
+|   _ENTERED   |               ['_ENTERED']              |
+|   _status    | ['_NOT_ENTERED', '_ENTERED', '_status'] |
++--------------+-----------------------------------------+
+
+Function constructor()
++------------------------------+------------------+
+|           Variable           |   Dependencies   |
++------------------------------+------------------+
+| ReentrancyGuard._NOT_ENTERED | ['_NOT_ENTERED'] |
+|   ReentrancyGuard._ENTERED   |        []        |
+|   ReentrancyGuard._status    | ['_NOT_ENTERED'] |
++------------------------------+------------------+
+Function slitherConstructorConstantVariables()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
++------------------------------+--------------+
+Function nonReentrant()
++------------------------------+-----------------------------------------+
+|           Variable           |               Dependencies              |
++------------------------------+-----------------------------------------+
+| ReentrancyGuard._NOT_ENTERED |             ['_NOT_ENTERED']            |
+|   ReentrancyGuard._ENTERED   |               ['_ENTERED']              |
+|   ReentrancyGuard._status    | ['_NOT_ENTERED', '_ENTERED', '_status'] |
++------------------------------+-----------------------------------------+
+Contract Timer
++-----------------------+---------------------------+
+|        Variable       |        Dependencies       |
++-----------------------+---------------------------+
+| minimumWindowDuration | ['minimumWindowDuration'] |
++-----------------------+---------------------------+
+
+Function setWindow(Timer.Window,uint256,uint256)
++-----------------------------+------------------------------------------+
+|           Variable          |               Dependencies               |
++-----------------------------+------------------------------------------+
+|         windowToSet         | ['windowToSet', 'startTime', 'stopTime'] |
+|          startTime          |                    []                    |
+|           stopTime          |                    []                    |
+|         oldStartTime        |             ['windowToSet']              |
+|         oldStopTime         |             ['windowToSet']              |
+| Timer.minimumWindowDuration |        ['minimumWindowDuration']         |
++-----------------------------+------------------------------------------+
+Function currentTimeIsInWindow(Timer.Window)
++-----------------------------+---------------------+
+|           Variable          |     Dependencies    |
++-----------------------------+---------------------+
+|            window           |      ['window']     |
+|                             |          []         |
+|         currentTime         | ['block.timestamp'] |
+| Timer.minimumWindowDuration |          []         |
++-----------------------------+---------------------+
+Function slitherConstructorConstantVariables()
++-----------------------------+--------------+
+|           Variable          | Dependencies |
++-----------------------------+--------------+
+| Timer.minimumWindowDuration |      []      |
++-----------------------------+--------------+
+Contract CLOCKS_OTC
++-------------------+------------------------------------------------------------------------+
+|      Variable     |                              Dependencies                              |
++-------------------+------------------------------------------------------------------------+
+|      _paused      |                              ['_paused']                               |
+|    _NOT_ENTERED   |                            ['_NOT_ENTERED']                            |
+|      _ENTERED     |                              ['_ENTERED']                              |
+|      _status      |                ['_NOT_ENTERED', '_ENTERED', '_status']                 |
+|       owner       |                 ['newOwner', 'owner', 'ownerAddress']                  |
+|      treasury     |             ['treasury', 'treasuryAddress', 'newTreasury']             |
+|    OTHER_token    |                  ['otherTokenAddress', 'OTHER_token']                  |
+|     CLK_token     |                    ['clkTokenAddress', 'CLK_token']                    |
+|   one_CLK_token   |                           ['one_CLK_token']                            |
+| transactionWindow |                         ['transactionWindow']                          |
+|      buyRate      |            ['other_clk_rate', 'buyRate', 'initialBuyRate']             |
+|      sellRate     |           ['sellRate', 'initialSellRate', 'other_clk_rate']            |
+|  maxBuyAmountCLK  |  ['newMaxBuyAmountCLK', 'maxBuyAmountCLK', 'initialMaxBuyAmountCLK']   |
+|  maxSellAmountCLK | ['maxSellAmountCLK', 'newMaxSellAmountCLK', 'initialMaxSellAmountCLK'] |
++-------------------+------------------------------------------------------------------------+
+
+Function constructor(address,address,address,address,uint256,uint256,uint256,uint256)
++------------------------------+-----------------------------+
+|           Variable           |         Dependencies        |
++------------------------------+-----------------------------+
+|         ownerAddress         |              []             |
+|       treasuryAddress        |              []             |
+|      otherTokenAddress       |              []             |
+|       clkTokenAddress        |              []             |
+|        initialBuyRate        |              []             |
+|       initialSellRate        |              []             |
+|    initialMaxBuyAmountCLK    |              []             |
+|   initialMaxSellAmountCLK    |              []             |
+|       Pausable._paused       |              []             |
+| ReentrancyGuard._NOT_ENTERED |              []             |
+|   ReentrancyGuard._ENTERED   |              []             |
+|   ReentrancyGuard._status    |              []             |
+|       CLOCKS_OTC.owner       |       ['ownerAddress']      |
+|     CLOCKS_OTC.treasury      |     ['treasuryAddress']     |
+|    CLOCKS_OTC.OTHER_token    |    ['otherTokenAddress']    |
+|     CLOCKS_OTC.CLK_token     |     ['clkTokenAddress']     |
+|   CLOCKS_OTC.one_CLK_token   |              []             |
+| CLOCKS_OTC.transactionWindow |    ['transactionWindow']    |
+|      CLOCKS_OTC.buyRate      |      ['initialBuyRate']     |
+|     CLOCKS_OTC.sellRate      |     ['initialSellRate']     |
+|  CLOCKS_OTC.maxBuyAmountCLK  |  ['initialMaxBuyAmountCLK'] |
+| CLOCKS_OTC.maxSellAmountCLK  | ['initialMaxSellAmountCLK'] |
++------------------------------+-----------------------------+
+Function buy(uint256)
++------------------------------+-------------------------------------------+
+|           Variable           |                Dependencies               |
++------------------------------+-------------------------------------------+
+|          amountCLK           |                     []                    |
+|            buyer             |               ['msg.sender']              |
+|         amountOTHER          | ['amountCLK', 'buyRate', 'one_CLK_token'] |
+|       Pausable._paused       |                     []                    |
+| ReentrancyGuard._NOT_ENTERED |                     []                    |
+|   ReentrancyGuard._ENTERED   |                     []                    |
+|   ReentrancyGuard._status    |                     []                    |
+|       CLOCKS_OTC.owner       |                     []                    |
+|     CLOCKS_OTC.treasury      |                ['treasury']               |
+|    CLOCKS_OTC.OTHER_token    |              ['OTHER_token']              |
+|     CLOCKS_OTC.CLK_token     |               ['CLK_token']               |
+|   CLOCKS_OTC.one_CLK_token   |             ['one_CLK_token']             |
+| CLOCKS_OTC.transactionWindow |                     []                    |
+|      CLOCKS_OTC.buyRate      |                ['buyRate']                |
+|     CLOCKS_OTC.sellRate      |                     []                    |
+|  CLOCKS_OTC.maxBuyAmountCLK  |            ['maxBuyAmountCLK']            |
+| CLOCKS_OTC.maxSellAmountCLK  |                     []                    |
++------------------------------+-------------------------------------------+
+Function sell(uint256)
++------------------------------+--------------------------------------------+
+|           Variable           |                Dependencies                |
++------------------------------+--------------------------------------------+
+|          amountCLK           |                     []                     |
+|            seller            |               ['msg.sender']               |
+|         amountOTHER          | ['amountCLK', 'sellRate', 'one_CLK_token'] |
+|       Pausable._paused       |                     []                     |
+| ReentrancyGuard._NOT_ENTERED |                     []                     |
+|   ReentrancyGuard._ENTERED   |                     []                     |
+|   ReentrancyGuard._status    |                     []                     |
+|       CLOCKS_OTC.owner       |                     []                     |
+|     CLOCKS_OTC.treasury      |                ['treasury']                |
+|    CLOCKS_OTC.OTHER_token    |              ['OTHER_token']               |
+|     CLOCKS_OTC.CLK_token     |               ['CLK_token']                |
+|   CLOCKS_OTC.one_CLK_token   |             ['one_CLK_token']              |
+| CLOCKS_OTC.transactionWindow |                     []                     |
+|      CLOCKS_OTC.buyRate      |                     []                     |
+|     CLOCKS_OTC.sellRate      |                ['sellRate']                |
+|  CLOCKS_OTC.maxBuyAmountCLK  |                     []                     |
+| CLOCKS_OTC.maxSellAmountCLK  |            ['maxSellAmountCLK']            |
++------------------------------+--------------------------------------------+
+Function withdrawCLK()
++------------------------------+---------------------------+
+|           Variable           |        Dependencies       |
++------------------------------+---------------------------+
+|           balance            | ['treasury', 'CLK_token'] |
+|       Pausable._paused       |             []            |
+| ReentrancyGuard._NOT_ENTERED |             []            |
+|   ReentrancyGuard._ENTERED   |             []            |
+|   ReentrancyGuard._status    |             []            |
+|       CLOCKS_OTC.owner       |         ['owner']         |
+|     CLOCKS_OTC.treasury      |        ['treasury']       |
+|    CLOCKS_OTC.OTHER_token    |             []            |
+|     CLOCKS_OTC.CLK_token     |       ['CLK_token']       |
+|   CLOCKS_OTC.one_CLK_token   |             []            |
+| CLOCKS_OTC.transactionWindow |             []            |
+|      CLOCKS_OTC.buyRate      |             []            |
+|     CLOCKS_OTC.sellRate      |             []            |
+|  CLOCKS_OTC.maxBuyAmountCLK  |             []            |
+| CLOCKS_OTC.maxSellAmountCLK  |             []            |
++------------------------------+---------------------------+
+Function withdrawOTHER()
++------------------------------+-----------------------------+
+|           Variable           |         Dependencies        |
++------------------------------+-----------------------------+
+|           balance            | ['treasury', 'OTHER_token'] |
+|       Pausable._paused       |              []             |
+| ReentrancyGuard._NOT_ENTERED |              []             |
+|   ReentrancyGuard._ENTERED   |              []             |
+|   ReentrancyGuard._status    |              []             |
+|       CLOCKS_OTC.owner       |          ['owner']          |
+|     CLOCKS_OTC.treasury      |         ['treasury']        |
+|    CLOCKS_OTC.OTHER_token    |       ['OTHER_token']       |
+|     CLOCKS_OTC.CLK_token     |              []             |
+|   CLOCKS_OTC.one_CLK_token   |              []             |
+| CLOCKS_OTC.transactionWindow |              []             |
+|      CLOCKS_OTC.buyRate      |              []             |
+|     CLOCKS_OTC.sellRate      |              []             |
+|  CLOCKS_OTC.maxBuyAmountCLK  |              []             |
+| CLOCKS_OTC.maxSellAmountCLK  |              []             |
++------------------------------+-----------------------------+
+Function pauseContract()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+|       Pausable._paused       |      []      |
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
+|       CLOCKS_OTC.owner       |      []      |
+|     CLOCKS_OTC.treasury      |      []      |
+|    CLOCKS_OTC.OTHER_token    |      []      |
+|     CLOCKS_OTC.CLK_token     |      []      |
+|   CLOCKS_OTC.one_CLK_token   |      []      |
+| CLOCKS_OTC.transactionWindow |      []      |
+|      CLOCKS_OTC.buyRate      |      []      |
+|     CLOCKS_OTC.sellRate      |      []      |
+|  CLOCKS_OTC.maxBuyAmountCLK  |      []      |
+| CLOCKS_OTC.maxSellAmountCLK  |      []      |
++------------------------------+--------------+
+Function unpauseContract()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+|       Pausable._paused       |      []      |
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
+|       CLOCKS_OTC.owner       |      []      |
+|     CLOCKS_OTC.treasury      |      []      |
+|    CLOCKS_OTC.OTHER_token    |      []      |
+|     CLOCKS_OTC.CLK_token     |      []      |
+|   CLOCKS_OTC.one_CLK_token   |      []      |
+| CLOCKS_OTC.transactionWindow |      []      |
+|      CLOCKS_OTC.buyRate      |      []      |
+|     CLOCKS_OTC.sellRate      |      []      |
+|  CLOCKS_OTC.maxBuyAmountCLK  |      []      |
+| CLOCKS_OTC.maxSellAmountCLK  |      []      |
++------------------------------+--------------+
+Function setTransactionWindow(uint256,uint256)
++------------------------------+-----------------------+
+|           Variable           |      Dependencies     |
++------------------------------+-----------------------+
+|          startTime           |           []          |
+|           stopTime           |           []          |
+|       Pausable._paused       |           []          |
+| ReentrancyGuard._NOT_ENTERED |           []          |
+|   ReentrancyGuard._ENTERED   |           []          |
+|   ReentrancyGuard._status    |           []          |
+|       CLOCKS_OTC.owner       |           []          |
+|     CLOCKS_OTC.treasury      |           []          |
+|    CLOCKS_OTC.OTHER_token    |           []          |
+|     CLOCKS_OTC.CLK_token     |           []          |
+|   CLOCKS_OTC.one_CLK_token   |           []          |
+| CLOCKS_OTC.transactionWindow | ['transactionWindow'] |
+|      CLOCKS_OTC.buyRate      |           []          |
+|     CLOCKS_OTC.sellRate      |           []          |
+|  CLOCKS_OTC.maxBuyAmountCLK  |           []          |
+| CLOCKS_OTC.maxSellAmountCLK  |           []          |
++------------------------------+-----------------------+
+Function getMinimumTransactionWindow()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+|                              |      []      |
+|       Pausable._paused       |      []      |
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
+|       CLOCKS_OTC.owner       |      []      |
+|     CLOCKS_OTC.treasury      |      []      |
+|    CLOCKS_OTC.OTHER_token    |      []      |
+|     CLOCKS_OTC.CLK_token     |      []      |
+|   CLOCKS_OTC.one_CLK_token   |      []      |
+| CLOCKS_OTC.transactionWindow |      []      |
+|      CLOCKS_OTC.buyRate      |      []      |
+|     CLOCKS_OTC.sellRate      |      []      |
+|  CLOCKS_OTC.maxBuyAmountCLK  |      []      |
+| CLOCKS_OTC.maxSellAmountCLK  |      []      |
++------------------------------+--------------+
+Function setBuyRate(uint256)
++------------------------------+-------------------------------+
+|           Variable           |          Dependencies         |
++------------------------------+-------------------------------+
+|        other_clk_rate        |               []              |
+|           oldRate            |          ['buyRate']          |
+|       Pausable._paused       |               []              |
+| ReentrancyGuard._NOT_ENTERED |               []              |
+|   ReentrancyGuard._ENTERED   |               []              |
+|   ReentrancyGuard._status    |               []              |
+|       CLOCKS_OTC.owner       |               []              |
+|     CLOCKS_OTC.treasury      |               []              |
+|    CLOCKS_OTC.OTHER_token    |               []              |
+|     CLOCKS_OTC.CLK_token     |               []              |
+|   CLOCKS_OTC.one_CLK_token   |               []              |
+| CLOCKS_OTC.transactionWindow |               []              |
+|      CLOCKS_OTC.buyRate      | ['other_clk_rate', 'buyRate'] |
+|     CLOCKS_OTC.sellRate      |               []              |
+|  CLOCKS_OTC.maxBuyAmountCLK  |               []              |
+| CLOCKS_OTC.maxSellAmountCLK  |               []              |
++------------------------------+-------------------------------+
+Function setSellRate(uint256)
++------------------------------+--------------------------------+
+|           Variable           |          Dependencies          |
++------------------------------+--------------------------------+
+|        other_clk_rate        |               []               |
+|           oldRate            |          ['sellRate']          |
+|       Pausable._paused       |               []               |
+| ReentrancyGuard._NOT_ENTERED |               []               |
+|   ReentrancyGuard._ENTERED   |               []               |
+|   ReentrancyGuard._status    |               []               |
+|       CLOCKS_OTC.owner       |               []               |
+|     CLOCKS_OTC.treasury      |               []               |
+|    CLOCKS_OTC.OTHER_token    |               []               |
+|     CLOCKS_OTC.CLK_token     |               []               |
+|   CLOCKS_OTC.one_CLK_token   |               []               |
+| CLOCKS_OTC.transactionWindow |               []               |
+|      CLOCKS_OTC.buyRate      |               []               |
+|     CLOCKS_OTC.sellRate      | ['sellRate', 'other_clk_rate'] |
+|  CLOCKS_OTC.maxBuyAmountCLK  |               []               |
+| CLOCKS_OTC.maxSellAmountCLK  |               []               |
++------------------------------+--------------------------------+
+Function setMaxBuyAmountCLK(uint256)
++------------------------------+-------------------------------------------+
+|           Variable           |                Dependencies               |
++------------------------------+-------------------------------------------+
+|      newMaxBuyAmountCLK      |                     []                    |
+|       oldMaxAmountCLK        |            ['maxBuyAmountCLK']            |
+|       Pausable._paused       |                     []                    |
+| ReentrancyGuard._NOT_ENTERED |                     []                    |
+|   ReentrancyGuard._ENTERED   |                     []                    |
+|   ReentrancyGuard._status    |                     []                    |
+|       CLOCKS_OTC.owner       |                     []                    |
+|     CLOCKS_OTC.treasury      |                     []                    |
+|    CLOCKS_OTC.OTHER_token    |                     []                    |
+|     CLOCKS_OTC.CLK_token     |                     []                    |
+|   CLOCKS_OTC.one_CLK_token   |                     []                    |
+| CLOCKS_OTC.transactionWindow |                     []                    |
+|      CLOCKS_OTC.buyRate      |                     []                    |
+|     CLOCKS_OTC.sellRate      |                     []                    |
+|  CLOCKS_OTC.maxBuyAmountCLK  | ['newMaxBuyAmountCLK', 'maxBuyAmountCLK'] |
+| CLOCKS_OTC.maxSellAmountCLK  |                     []                    |
++------------------------------+-------------------------------------------+
+Function setMaxSellAmountCLK(uint256)
++------------------------------+---------------------------------------------+
+|           Variable           |                 Dependencies                |
++------------------------------+---------------------------------------------+
+|     newMaxSellAmountCLK      |                      []                     |
+|       oldMaxAmountCLK        |             ['maxSellAmountCLK']            |
+|       Pausable._paused       |                      []                     |
+| ReentrancyGuard._NOT_ENTERED |                      []                     |
+|   ReentrancyGuard._ENTERED   |                      []                     |
+|   ReentrancyGuard._status    |                      []                     |
+|       CLOCKS_OTC.owner       |                      []                     |
+|     CLOCKS_OTC.treasury      |                      []                     |
+|    CLOCKS_OTC.OTHER_token    |                      []                     |
+|     CLOCKS_OTC.CLK_token     |                      []                     |
+|   CLOCKS_OTC.one_CLK_token   |                      []                     |
+| CLOCKS_OTC.transactionWindow |                      []                     |
+|      CLOCKS_OTC.buyRate      |                      []                     |
+|     CLOCKS_OTC.sellRate      |                      []                     |
+|  CLOCKS_OTC.maxBuyAmountCLK  |                      []                     |
+| CLOCKS_OTC.maxSellAmountCLK  | ['maxSellAmountCLK', 'newMaxSellAmountCLK'] |
++------------------------------+---------------------------------------------+
+Function updateOwner(address)
++------------------------------+-----------------------+
+|           Variable           |      Dependencies     |
++------------------------------+-----------------------+
+|           newOwner           |           []          |
+|           oldOwner           |       ['owner']       |
+|       Pausable._paused       |           []          |
+| ReentrancyGuard._NOT_ENTERED |           []          |
+|   ReentrancyGuard._ENTERED   |           []          |
+|   ReentrancyGuard._status    |           []          |
+|       CLOCKS_OTC.owner       | ['newOwner', 'owner'] |
+|     CLOCKS_OTC.treasury      |           []          |
+|    CLOCKS_OTC.OTHER_token    |           []          |
+|     CLOCKS_OTC.CLK_token     |           []          |
+|   CLOCKS_OTC.one_CLK_token   |           []          |
+| CLOCKS_OTC.transactionWindow |           []          |
+|      CLOCKS_OTC.buyRate      |           []          |
+|     CLOCKS_OTC.sellRate      |           []          |
+|  CLOCKS_OTC.maxBuyAmountCLK  |           []          |
+| CLOCKS_OTC.maxSellAmountCLK  |           []          |
++------------------------------+-----------------------+
+Function updateTreasury(address)
++------------------------------+-----------------------------+
+|           Variable           |         Dependencies        |
++------------------------------+-----------------------------+
+|         newTreasury          |              []             |
+|         oldTreasury          |         ['treasury']        |
+|       Pausable._paused       |              []             |
+| ReentrancyGuard._NOT_ENTERED |              []             |
+|   ReentrancyGuard._ENTERED   |              []             |
+|   ReentrancyGuard._status    |              []             |
+|       CLOCKS_OTC.owner       |              []             |
+|     CLOCKS_OTC.treasury      | ['treasury', 'newTreasury'] |
+|    CLOCKS_OTC.OTHER_token    |              []             |
+|     CLOCKS_OTC.CLK_token     |              []             |
+|   CLOCKS_OTC.one_CLK_token   |              []             |
+| CLOCKS_OTC.transactionWindow |              []             |
+|      CLOCKS_OTC.buyRate      |              []             |
+|     CLOCKS_OTC.sellRate      |              []             |
+|  CLOCKS_OTC.maxBuyAmountCLK  |              []             |
+| CLOCKS_OTC.maxSellAmountCLK  |              []             |
++------------------------------+-----------------------------+
+Function slitherConstructorConstantVariables()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+|       Pausable._paused       |      []      |
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
+|       CLOCKS_OTC.owner       |      []      |
+|     CLOCKS_OTC.treasury      |      []      |
+|    CLOCKS_OTC.OTHER_token    |      []      |
+|     CLOCKS_OTC.CLK_token     |      []      |
+|   CLOCKS_OTC.one_CLK_token   |      []      |
+| CLOCKS_OTC.transactionWindow |      []      |
+|      CLOCKS_OTC.buyRate      |      []      |
+|     CLOCKS_OTC.sellRate      |      []      |
+|  CLOCKS_OTC.maxBuyAmountCLK  |      []      |
+| CLOCKS_OTC.maxSellAmountCLK  |      []      |
++------------------------------+--------------+
+Function onlyOwnerRole()
++------------------------------+--------------+
+|           Variable           | Dependencies |
++------------------------------+--------------+
+|       Pausable._paused       |      []      |
+| ReentrancyGuard._NOT_ENTERED |      []      |
+|   ReentrancyGuard._ENTERED   |      []      |
+|   ReentrancyGuard._status    |      []      |
+|       CLOCKS_OTC.owner       |  ['owner']   |
+|     CLOCKS_OTC.treasury      |      []      |
+|    CLOCKS_OTC.OTHER_token    |      []      |
+|     CLOCKS_OTC.CLK_token     |      []      |
+|   CLOCKS_OTC.one_CLK_token   |      []      |
+| CLOCKS_OTC.transactionWindow |      []      |
+|      CLOCKS_OTC.buyRate      |      []      |
+|     CLOCKS_OTC.sellRate      |      []      |
+|  CLOCKS_OTC.maxBuyAmountCLK  |      []      |
+| CLOCKS_OTC.maxSellAmountCLK  |      []      |
++------------------------------+--------------+
+Function windowIsOpen()
++------------------------------+-----------------------+
+|           Variable           |      Dependencies     |
++------------------------------+-----------------------+
+|       Pausable._paused       |           []          |
+| ReentrancyGuard._NOT_ENTERED |           []          |
+|   ReentrancyGuard._ENTERED   |           []          |
+|   ReentrancyGuard._status    |           []          |
+|       CLOCKS_OTC.owner       |           []          |
+|     CLOCKS_OTC.treasury      |           []          |
+|    CLOCKS_OTC.OTHER_token    |           []          |
+|     CLOCKS_OTC.CLK_token     |           []          |
+|   CLOCKS_OTC.one_CLK_token   |           []          |
+| CLOCKS_OTC.transactionWindow | ['transactionWindow'] |
+|      CLOCKS_OTC.buyRate      |           []          |
+|     CLOCKS_OTC.sellRate      |           []          |
+|  CLOCKS_OTC.maxBuyAmountCLK  |           []          |
+| CLOCKS_OTC.maxSellAmountCLK  |           []          |
++------------------------------+-----------------------+
+/share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol analyzed (8 contracts)

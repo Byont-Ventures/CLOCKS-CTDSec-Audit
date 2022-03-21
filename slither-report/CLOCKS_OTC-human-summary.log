@@ -1,0 +1,34 @@
+Compilation warnings/errors on /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol
+
+
+
+Compiled with solc
+Number of lines: 613 (+ 0 in dependencies, + 0 in tests)
+Number of assembly lines: 0
+Number of contracts: 8 (+ 0 in dependencies, + 0 tests) 
+
+Number of optimization issues: 0
+Number of informational issues: 26
+Number of low issues: 5
+Number of medium issues: 0
+Number of high issues: 0
+
+ERCs: ERC20
+
++------------+-------------+-------+--------------------+--------------+--------------------+
+|    Name    | # functions |  ERCS |     ERC20 info     | Complex code |      Features      |
++------------+-------------+-------+--------------------+--------------+--------------------+
+|   IERC20   |      6      | ERC20 |     No Minting     |      No      |                    |
+|            |             |       | Approve Race Cond. |              |                    |
+|            |             |       |                    |              |                    |
+|  Address   |      11     |       |                    |      No      |      Send ETH      |
+|            |             |       |                    |              |    Delegatecall    |
+|            |             |       |                    |              |      Assembly      |
+| SafeERC20  |      6      |       |                    |      No      |      Send ETH      |
+|            |             |       |                    |              | Tokens interaction |
+|   Timer    |      3      |       |                    |      No      |                    |
+| CLOCKS_OTC |      23     |       |                    |      No      | Tokens interaction |
++------------+-------------+-------+--------------------+--------------+--------------------+
+/share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol analyzed (8 contracts)

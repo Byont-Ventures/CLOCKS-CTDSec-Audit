@@ -1,0 +1,76 @@
+Compilation warnings/errors on /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol
+
+
+
+Reentrancy in CLOCKS_OTC.buy(uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#475-494):
+	External calls:
+	- OTHER_token.safeTransferFrom(buyer,treasury,amountOTHER) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#490)
+	- CLK_token.safeTransferFrom(treasury,buyer,amountCLK) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#491)
+	Event emitted after the call(s):
+	- BuyEvent(amountOTHER,amountCLK,buyer) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#493)
+Reentrancy in CLOCKS_OTC.sell(uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#498-517):
+	External calls:
+	- CLK_token.safeTransferFrom(seller,treasury,amountCLK) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#513)
+	- OTHER_token.safeTransferFrom(treasury,seller,amountOTHER) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#514)
+	Event emitted after the call(s):
+	- SellEvent(amountCLK,amountOTHER,seller) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#516)
+Reentrancy in CLOCKS_OTC.withdrawCLK() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#519-524):
+	External calls:
+	- CLK_token.safeTransferFrom(treasury,owner,balance) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#521)
+	Event emitted after the call(s):
+	- WithdrawnCLK(treasury,owner,balance) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#523)
+Reentrancy in CLOCKS_OTC.withdrawOTHER() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#526-531):
+	External calls:
+	- OTHER_token.safeTransferFrom(treasury,owner,balance) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#528)
+	Event emitted after the call(s):
+	- WithdrawnOTHER(treasury,owner,balance) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#530)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Timer.currentTimeIsInWindow(Timer.Window) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#363-372) uses timestamp for comparisons
+	Dangerous comparisons:
+	- ((currentTime >= window.startTime) && (currentTime <= window.stopTime)) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#370-371)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Address.verifyCallResult(bool,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#125-145) uses assembly
+	- INLINE ASM (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#137-140)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+Address.functionCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#54-56) is never used and should be removed
+Address.functionCallWithValue(address,bytes,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#68-74) is never used and should be removed
+Address.functionDelegateCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#108-110) is never used and should be removed
+Address.functionDelegateCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#113-122) is never used and should be removed
+Address.functionStaticCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#91-93) is never used and should be removed
+Address.functionStaticCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#96-105) is never used and should be removed
+Address.sendValue(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#46-51) is never used and should be removed
+Context._msgData() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#225-227) is never used and should be removed
+SafeERC20.safeApprove(IERC20,address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#169-182) is never used and should be removed
+SafeERC20.safeDecreaseAllowance(IERC20,address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#193-204) is never used and should be removed
+SafeERC20.safeIncreaseAllowance(IERC20,address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#184-191) is never used and should be removed
+SafeERC20.safeTransfer(IERC20,address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#151-157) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Pragma version^0.8.4 (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
+solc-0.8.6 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Address.sendValue(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#46-51):
+	- (success) = recipient.call{value: amount}() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#49)
+Low level call in Address.functionCallWithValue(address,bytes,uint256,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#77-88):
+	- (success,returndata) = target.call{value: value}(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#86)
+Low level call in Address.functionStaticCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#96-105):
+	- (success,returndata) = target.staticcall(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#103)
+Low level call in Address.functionDelegateCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#113-122):
+	- (success,returndata) = target.delegatecall(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#120)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Constant Timer.minimumWindowDuration (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#320) is not in UPPER_CASE_WITH_UNDERSCORES
+Contract CLOCKS_OTC (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#375-614) is not in CapWords
+Parameter CLOCKS_OTC.setBuyRate(uint256).other_clk_rate (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#555) is not in mixedCase
+Parameter CLOCKS_OTC.setSellRate(uint256).other_clk_rate (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#565) is not in mixedCase
+Variable CLOCKS_OTC.OTHER_token (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#383) is not in mixedCase
+Variable CLOCKS_OTC.CLK_token (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#384) is not in mixedCase
+Variable CLOCKS_OTC.one_CLK_token (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol#386) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_OTC.sol analyzed (8 contracts with 75 detectors), 31 result(s) found

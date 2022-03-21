@@ -1,0 +1,30 @@
+Compilation warnings/errors on /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol
+
+
+
+Compiled with solc
+Number of lines: 714 (+ 0 in dependencies, + 0 in tests)
+Number of assembly lines: 0
+Number of contracts: 12 (+ 0 in dependencies, + 0 tests) 
+
+Number of optimization issues: 9
+Number of informational issues: 49
+Number of low issues: 1
+Number of medium issues: 2
+Number of high issues: 4
+ERCs: ERC20
+
++------------------------+-------------+-------+--------------------+--------------+--------------+
+|          Name          | # functions |  ERCS |     ERC20 info     | Complex code |   Features   |
++------------------------+-------------+-------+--------------------+--------------+--------------+
+|   AddressUpgradeable   |      9      |       |                    |      No      |   Send ETH   |
+|                        |             |       |                    |              |   Assembly   |
+|   IBeaconUpgradeable   |      1      |       |                    |      No      |              |
+| StorageSlotUpgradeable |      4      |       |                    |      No      |   Assembly   |
+|      CLOCKS_Token      |      63     | ERC20 |     ∞ Minting      |      No      | Receive ETH  |
+|                        |             |       | Approve Race Cond. |              | Delegatecall |
+|                        |             |       |                    |              | Upgradeable  |
++------------------------+-------------+-------+--------------------+--------------+--------------+
+/share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol analyzed (12 contracts)

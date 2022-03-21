@@ -1,0 +1,117 @@
+Compilation warnings/errors on /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> /share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol
+
+
+
+ERC1967UpgradeUpgradeable._functionDelegateCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#572-578) uses delegatecall to a input-controlled function id
+	- (success,returndata) = target.delegatecall(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#576)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#controlled-delegatecall
+
+ERC20Upgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#390) shadows:
+	- ContextUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#195)
+UUPSUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#627) shadows:
+	- ERC1967UpgradeUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#581)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variable-shadowing
+
+CLOCKS_Token (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#630-715) is an upgradeable contract that does not protect its initiliaze functions: CLOCKS_Token.initialize(address,address) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#653-664). Anyone can delete the contract with: UUPSUpgradeable.upgradeTo(address) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#612-615)UUPSUpgradeable.upgradeToAndCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#618-621)Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unprotected-upgradeable-contract
+
+ERC1967UpgradeUpgradeable._upgradeToAndCallUUPS(address,bytes,bool).slot (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#505) is a local variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-local-variables
+
+ERC1967UpgradeUpgradeable._upgradeToAndCallUUPS(address,bytes,bool) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#494-512) ignores return value by IERC1822ProxiableUpgradeable(newImplementation).proxiableUUID() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#505-509)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+
+Variable 'ERC1967UpgradeUpgradeable._upgradeToAndCallUUPS(address,bytes,bool).slot (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#505)' in ERC1967UpgradeUpgradeable._upgradeToAndCallUUPS(address,bytes,bool) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#494-512) potentially used before declaration: require(bool,string)(slot == _IMPLEMENTATION_SLOT,ERC1967Upgrade: unsupported proxiableUUID) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#506)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#pre-declaration-usage-of-local-variables
+
+AddressUpgradeable.verifyCallResult(bool,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#119-139) uses assembly
+	- INLINE ASM (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#131-134)
+StorageSlotUpgradeable.getAddressSlot(bytes32) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#421-425) uses assembly
+	- INLINE ASM (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#422-424)
+StorageSlotUpgradeable.getBooleanSlot(bytes32) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#428-432) uses assembly
+	- INLINE ASM (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#429-431)
+StorageSlotUpgradeable.getBytes32Slot(bytes32) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#435-439) uses assembly
+	- INLINE ASM (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#436-438)
+StorageSlotUpgradeable.getUint256Slot(bytes32) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#442-446) uses assembly
+	- INLINE ASM (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#443-445)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+AddressUpgradeable.functionCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#65-67) is never used and should be removed
+AddressUpgradeable.functionCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#70-76) is never used and should be removed
+AddressUpgradeable.functionCallWithValue(address,bytes,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#79-85) is never used and should be removed
+AddressUpgradeable.functionCallWithValue(address,bytes,uint256,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#88-99) is never used and should be removed
+AddressUpgradeable.functionStaticCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#102-104) is never used and should be removed
+AddressUpgradeable.functionStaticCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#107-116) is never used and should be removed
+AddressUpgradeable.sendValue(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#57-62) is never used and should be removed
+ContextUpgradeable.__Context_init() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#181-182) is never used and should be removed
+ContextUpgradeable.__Context_init_unchained() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#184-185) is never used and should be removed
+ContextUpgradeable._msgData() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#190-192) is never used and should be removed
+ERC1967UpgradeUpgradeable.__ERC1967Upgrade_init() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#450-451) is never used and should be removed
+ERC1967UpgradeUpgradeable.__ERC1967Upgrade_init_unchained() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#453-454) is never used and should be removed
+ERC1967UpgradeUpgradeable._changeAdmin(address) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#532-535) is never used and should be removed
+ERC1967UpgradeUpgradeable._getAdmin() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#521-523) is never used and should be removed
+ERC1967UpgradeUpgradeable._getBeacon() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#544-546) is never used and should be removed
+ERC1967UpgradeUpgradeable._setAdmin(address) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#526-529) is never used and should be removed
+ERC1967UpgradeUpgradeable._setBeacon(address) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#549-556) is never used and should be removed
+ERC1967UpgradeUpgradeable._upgradeBeaconToAndCall(address,bytes,bool) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#559-569) is never used and should be removed
+ERC20Upgradeable._burn(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#330-345) is never used and should be removed
+StorageSlotUpgradeable.getBytes32Slot(bytes32) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#435-439) is never used and should be removed
+StorageSlotUpgradeable.getUint256Slot(bytes32) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#442-446) is never used and should be removed
+UUPSUpgradeable.__UUPSUpgradeable_init_unchained() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#588-589) is never used and should be removed
+UUPSUpgradeable._authorizeUpgrade(address) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#624) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Pragma version^0.8.4 (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#1) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6
+solc-0.8.6 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in AddressUpgradeable.sendValue(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#57-62):
+	- (success) = recipient.call{value: amount}() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#60)
+Low level call in AddressUpgradeable.functionCallWithValue(address,bytes,uint256,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#88-99):
+	- (success,returndata) = target.call{value: value}(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#97)
+Low level call in AddressUpgradeable.functionStaticCall(address,bytes,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#107-116):
+	- (success,returndata) = target.staticcall(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#114)
+Low level call in ERC1967UpgradeUpgradeable._functionDelegateCall(address,bytes) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#572-578):
+	- (success,returndata) = target.delegatecall(data) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#576)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Function ContextUpgradeable.__Context_init() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#181-182) is not in mixedCase
+Function ContextUpgradeable.__Context_init_unchained() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#184-185) is not in mixedCase
+Variable ContextUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#195) is not in mixedCase
+Function ERC20Upgradeable.__ERC20_init(string,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#209-211) is not in mixedCase
+Function ERC20Upgradeable.__ERC20_init_unchained(string,string) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#213-216) is not in mixedCase
+Variable ERC20Upgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#390) is not in mixedCase
+Function ERC1967UpgradeUpgradeable.__ERC1967Upgrade_init() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#450-451) is not in mixedCase
+Function ERC1967UpgradeUpgradeable.__ERC1967Upgrade_init_unchained() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#453-454) is not in mixedCase
+Variable ERC1967UpgradeUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#581) is not in mixedCase
+Function UUPSUpgradeable.__UUPSUpgradeable_init() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#585-586) is not in mixedCase
+Function UUPSUpgradeable.__UUPSUpgradeable_init_unchained() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#588-589) is not in mixedCase
+Variable UUPSUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#627) is not in mixedCase
+Variable UUPSUpgradeable.__self (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#591) is not in mixedCase
+Contract CLOCKS_Token (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#630-715) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+UUPSUpgradeable.__gap (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#627) is never used in CLOCKS_Token (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#630-715)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+
+name() should be declared external:
+	- ERC20Upgradeable.name() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#219-221)
+symbol() should be declared external:
+	- ERC20Upgradeable.symbol() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#224-226)
+decimals() should be declared external:
+	- ERC20Upgradeable.decimals() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#229-231)
+totalSupply() should be declared external:
+	- ERC20Upgradeable.totalSupply() (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#234-236)
+transfer(address,uint256) should be declared external:
+	- ERC20Upgradeable.transfer(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#244-248)
+approve(address,uint256) should be declared external:
+	- ERC20Upgradeable.approve(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#256-260)
+transferFrom(address,address,uint256) should be declared external:
+	- ERC20Upgradeable.transferFrom(address,address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#263-272)
+increaseAllowance(address,uint256) should be declared external:
+	- ERC20Upgradeable.increaseAllowance(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#275-279)
+decreaseAllowance(address,uint256) should be declared external:
+	- ERC20Upgradeable.decreaseAllowance(address,uint256) (../../share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol#282-291)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/share/apps/clocks-smart-contracts/verification/_flat/CLOCKS_Token.sol analyzed (12 contracts with 75 detectors), 65 result(s) found
