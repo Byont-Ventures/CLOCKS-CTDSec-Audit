@@ -1,3 +1,3 @@
-# CLOCKS CTDSec Audit
+# Byont Labs / Audits
 
-Auditable files for CTD Sec audit
+Auditable files and reports for external audits.
