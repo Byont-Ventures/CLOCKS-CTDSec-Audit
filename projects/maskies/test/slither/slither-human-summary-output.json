@@ -1,0 +1,1039 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 1993 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 20 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC721, ERC165\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 1993 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 20 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC721, ERC165\n",
+        "first_markdown_element": "",
+        "id": "35c7df29ad425bab0a7f661c063bb357c0484543748851797de7cbd6c173e8b4",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Maskies",
+                "source_mapping": {
+                  "start": 616,
+                  "length": 7432,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                  "filename_relative": "apps/maskies/src/Maskies.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                  "filename_short": "apps/maskies/src/Maskies.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
+                    33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
+                    48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62,
+                    63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                    78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92,
+                    93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105,
+                    106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
+                    118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129,
+                    130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                    142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153,
+                    154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165,
+                    166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177,
+                    178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189,
+                    190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                    202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213,
+                    214, 215, 216
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Maskies",
+                  "is_complex_code": true,
+                  "is_erc20": false,
+                  "number_functions": 86,
+                  "features": ["Receive ETH", "Send ETH", "Assembly"]
+                }
+              },
+              {
+                "type": "contract",
+                "name": "IERC721Receiver",
+                "source_mapping": {
+                  "start": 294,
+                  "length": 692,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+                  "filename_relative": "node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+                  "filename_short": "node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+                    26, 27
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "IERC721Receiver",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Address",
+                "source_mapping": {
+                  "start": 194,
+                  "length": 8061,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/Address.sol",
+                  "filename_relative": "node_modules/@openzeppelin/contracts/utils/Address.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/Address.sol",
+                  "filename_short": "node_modules/@openzeppelin/contracts/utils/Address.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+                    24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+                    39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                    54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68,
+                    69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83,
+                    84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98,
+                    99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110,
+                    111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122,
+                    123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
+                    135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146,
+                    147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158,
+                    159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170,
+                    171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182,
+                    183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194,
+                    195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206,
+                    207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218,
+                    219, 220, 221, 222
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Address",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 11,
+                  "features": ["Send ETH", "Delegatecall", "Assembly"]
+                }
+              },
+              {
+                "type": "contract",
+                "name": "StorageSlot",
+                "source_mapping": {
+                  "start": 1264,
+                  "length": 1219,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+                  "filename_relative": "node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+                  "filename_short": "node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46,
+                    47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61,
+                    62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76,
+                    77, 78, 79, 80, 81, 82, 83, 84
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "StorageSlot",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": ["Assembly"]
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Strings",
+                "source_mapping": {
+                  "start": 146,
+                  "length": 1885,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+                  "filename_relative": "node_modules/@openzeppelin/contracts/utils/Strings.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+                  "filename_short": "node_modules/@openzeppelin/contracts/utils/Strings.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+                    24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+                    39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                    54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Strings",
+                  "is_complex_code": true,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "MerkleProof",
+                "source_mapping": {
+                  "start": 800,
+                  "length": 1777,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+                  "filename_relative": "node_modules/@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+                  "filename_short": "node_modules/@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+                    35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+                    50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64,
+                    65
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "MerkleProof",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": ["Assembly"]
+                }
+              },
+              {
+                "type": "contract",
+                "name": "BitMaps",
+                "source_mapping": {
+                  "start": 1206,
+                  "length": 2692,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/solidity-bits/contracts/BitMaps.sol",
+                  "filename_relative": "node_modules/solidity-bits/contracts/BitMaps.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/solidity-bits/contracts/BitMaps.sol",
+                  "filename_short": "node_modules/solidity-bits/contracts/BitMaps.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,
+                    45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+                    60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
+                    75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                    90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103,
+                    104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115,
+                    116, 117, 118, 119
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "BitMaps",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 7,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "BitScan",
+                "source_mapping": {
+                  "start": 521,
+                  "length": 2216,
+                  "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/solidity-bits/contracts/BitScan.sol",
+                  "filename_relative": "node_modules/solidity-bits/contracts/BitScan.sol",
+                  "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/node_modules/solidity-bits/contracts/BitScan.sol",
+                  "filename_short": "node_modules/solidity-bits/contracts/BitScan.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,
+                    33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
+                    48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62,
+                    63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "BitScan",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 6,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 1993,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": ["ERC721", "ERC165"],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.13 is not recommended for deployment\n",
+              "markdown": "solc-0.8.13 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "bc56806acae80296337a907273e86b040bfd9b323ee999e7bfc4971d888f5838",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.13",
+                  "source_mapping": {
+                    "start": 32,
+                    "length": 24,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [2],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": ["solidity", "^", "0.8", ".13"]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.13 (apps/maskies/src/Maskies.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6/0.8.7\n",
+              "markdown": "Pragma version[^0.8.13](apps/maskies/src/Maskies.sol#L2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6/0.8.7\n",
+              "first_markdown_element": "apps/maskies/src/Maskies.sol#L2",
+              "id": "dbec9cc17388276ea31d8bbe5f6e83a667ff2ffe714c6d4c334643d24ac0a038",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawAmount",
+                  "source_mapping": {
+                    "start": 6526,
+                    "length": 439,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [174, 175, 176, 177, 178, 179, 180, 181, 182, 183],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Maskies",
+                      "source_mapping": {
+                        "start": 616,
+                        "length": 7432,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                          31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+                          44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+                          57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+                          70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+                          83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95,
+                          96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+                          107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
+                          118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128,
+                          129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
+                          140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
+                          151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                          162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
+                          173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183,
+                          184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194,
+                          195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205,
+                          206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "withdrawAmount(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = address(owner()).call{value: amount}()",
+                  "source_mapping": {
+                    "start": 6816,
+                    "length": 59,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [179],
+                    "starting_column": 9,
+                    "ending_column": 68
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawAmount",
+                      "source_mapping": {
+                        "start": 6526,
+                        "length": 439,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          174, 175, 176, 177, 178, 179, 180, 181, 182, 183
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Maskies",
+                          "source_mapping": {
+                            "start": 616,
+                            "length": 7432,
+                            "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_relative": "apps/maskies/src/Maskies.sol",
+                            "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_short": "apps/maskies/src/Maskies.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                              30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+                              42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                              54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                              66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                              78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                              90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101,
+                              102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+                              112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+                              122, 123, 124, 125, 126, 127, 128, 129, 130, 131,
+                              132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                              142, 143, 144, 145, 146, 147, 148, 149, 150, 151,
+                              152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                              162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
+                              172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+                              182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+                              192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                              202, 203, 204, 205, 206, 207, 208, 209, 210, 211,
+                              212, 213, 214, 215, 216
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdrawAmount(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in Maskies.withdrawAmount(uint256) (apps/maskies/src/Maskies.sol#174-183):\n\t- (success) = address(owner()).call{value: amount}() (apps/maskies/src/Maskies.sol#179)\n",
+              "markdown": "Low level call in [Maskies.withdrawAmount(uint256)](apps/maskies/src/Maskies.sol#L174-L183):\n\t- [(success) = address(owner()).call{value: amount}()](apps/maskies/src/Maskies.sol#L179)\n",
+              "first_markdown_element": "apps/maskies/src/Maskies.sol#L174-L183",
+              "id": "35f1eda838599d48c855c1003cfc4bb65f8077476623164c0027c9534e1b2b71",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawAll",
+                  "source_mapping": {
+                    "start": 6971,
+                    "length": 358,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [185, 186, 187, 188, 189, 190, 191, 192, 193],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Maskies",
+                      "source_mapping": {
+                        "start": 616,
+                        "length": 7432,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                          31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+                          44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+                          57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+                          70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+                          83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95,
+                          96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+                          107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
+                          118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128,
+                          129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
+                          140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
+                          151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                          162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
+                          173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183,
+                          184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194,
+                          195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205,
+                          206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "withdrawAll()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = address(owner()).call{value: contractBalance}()",
+                  "source_mapping": {
+                    "start": 7165,
+                    "length": 68,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [189],
+                    "starting_column": 9,
+                    "ending_column": 77
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawAll",
+                      "source_mapping": {
+                        "start": 6971,
+                        "length": 358,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [185, 186, 187, 188, 189, 190, 191, 192, 193],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Maskies",
+                          "source_mapping": {
+                            "start": 616,
+                            "length": 7432,
+                            "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_relative": "apps/maskies/src/Maskies.sol",
+                            "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_short": "apps/maskies/src/Maskies.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                              30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+                              42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                              54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                              66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                              78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                              90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101,
+                              102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+                              112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+                              122, 123, 124, 125, 126, 127, 128, 129, 130, 131,
+                              132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                              142, 143, 144, 145, 146, 147, 148, 149, 150, 151,
+                              152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                              162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
+                              172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+                              182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+                              192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                              202, 203, 204, 205, 206, 207, 208, 209, 210, 211,
+                              212, 213, 214, 215, 216
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdrawAll()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in Maskies.withdrawAll() (apps/maskies/src/Maskies.sol#185-193):\n\t- (success) = address(owner()).call{value: contractBalance}() (apps/maskies/src/Maskies.sol#189)\n",
+              "markdown": "Low level call in [Maskies.withdrawAll()](apps/maskies/src/Maskies.sol#L185-L193):\n\t- [(success) = address(owner()).call{value: contractBalance}()](apps/maskies/src/Maskies.sol#L189)\n",
+              "first_markdown_element": "apps/maskies/src/Maskies.sol#L185-L193",
+              "id": "7bfafe03ff363fd4b2d87ce57dd0d14f402c063e0d16fe819944c4d9eb3a91c6",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawAmount",
+                  "source_mapping": {
+                    "start": 6526,
+                    "length": 439,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [174, 175, 176, 177, 178, 179, 180, 181, 182, 183],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Maskies",
+                      "source_mapping": {
+                        "start": 616,
+                        "length": 7432,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                          31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+                          44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+                          57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+                          70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+                          83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95,
+                          96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+                          107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
+                          118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128,
+                          129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
+                          140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
+                          151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                          162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
+                          173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183,
+                          184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194,
+                          195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205,
+                          206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "withdrawAmount(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = address(owner()).call{value: amount}()",
+                  "source_mapping": {
+                    "start": 6816,
+                    "length": 59,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [179],
+                    "starting_column": 9,
+                    "ending_column": 68
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawAmount",
+                      "source_mapping": {
+                        "start": 6526,
+                        "length": 439,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          174, 175, 176, 177, 178, 179, 180, 181, 182, 183
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Maskies",
+                          "source_mapping": {
+                            "start": 616,
+                            "length": 7432,
+                            "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_relative": "apps/maskies/src/Maskies.sol",
+                            "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_short": "apps/maskies/src/Maskies.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                              30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+                              42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                              54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                              66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                              78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                              90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101,
+                              102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+                              112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+                              122, 123, 124, 125, 126, 127, 128, 129, 130, 131,
+                              132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                              142, 143, 144, 145, 146, 147, 148, 149, 150, 151,
+                              152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                              162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
+                              172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+                              182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+                              192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                              202, 203, 204, 205, 206, 207, 208, 209, 210, 211,
+                              212, 213, 214, 215, 216
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdrawAmount(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "WithdrawAmount(amount)",
+                  "source_mapping": {
+                    "start": 6931,
+                    "length": 27,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [182],
+                    "starting_column": 9,
+                    "ending_column": 36
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawAmount",
+                      "source_mapping": {
+                        "start": 6526,
+                        "length": 439,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          174, 175, 176, 177, 178, 179, 180, 181, 182, 183
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Maskies",
+                          "source_mapping": {
+                            "start": 616,
+                            "length": 7432,
+                            "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_relative": "apps/maskies/src/Maskies.sol",
+                            "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_short": "apps/maskies/src/Maskies.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                              30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+                              42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                              54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                              66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                              78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                              90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101,
+                              102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+                              112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+                              122, 123, 124, 125, 126, 127, 128, 129, 130, 131,
+                              132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                              142, 143, 144, 145, 146, 147, 148, 149, 150, 151,
+                              152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                              162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
+                              172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+                              182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+                              192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                              202, 203, 204, 205, 206, 207, 208, 209, 210, 211,
+                              212, 213, 214, 215, 216
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdrawAmount(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in Maskies.withdrawAmount(uint256) (apps/maskies/src/Maskies.sol#174-183):\n\tExternal calls:\n\t- (success) = address(owner()).call{value: amount}() (apps/maskies/src/Maskies.sol#179)\n\tEvent emitted after the call(s):\n\t- WithdrawAmount(amount) (apps/maskies/src/Maskies.sol#182)\n",
+              "markdown": "Reentrancy in [Maskies.withdrawAmount(uint256)](apps/maskies/src/Maskies.sol#L174-L183):\n\tExternal calls:\n\t- [(success) = address(owner()).call{value: amount}()](apps/maskies/src/Maskies.sol#L179)\n\tEvent emitted after the call(s):\n\t- [WithdrawAmount(amount)](apps/maskies/src/Maskies.sol#L182)\n",
+              "first_markdown_element": "apps/maskies/src/Maskies.sol#L174-L183",
+              "id": "22eb27d6dd1735966539b4cbc166fbd917f4bab431eaeb9a3bc61b750132611a",
+              "check": "reentrancy-events",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawAll",
+                  "source_mapping": {
+                    "start": 6971,
+                    "length": 358,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [185, 186, 187, 188, 189, 190, 191, 192, 193],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Maskies",
+                      "source_mapping": {
+                        "start": 616,
+                        "length": 7432,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                          31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+                          44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+                          57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+                          70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+                          83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95,
+                          96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+                          107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
+                          118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128,
+                          129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
+                          140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
+                          151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                          162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
+                          173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183,
+                          184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194,
+                          195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205,
+                          206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "withdrawAll()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = address(owner()).call{value: contractBalance}()",
+                  "source_mapping": {
+                    "start": 7165,
+                    "length": 68,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [189],
+                    "starting_column": 9,
+                    "ending_column": 77
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawAll",
+                      "source_mapping": {
+                        "start": 6971,
+                        "length": 358,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [185, 186, 187, 188, 189, 190, 191, 192, 193],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Maskies",
+                          "source_mapping": {
+                            "start": 616,
+                            "length": 7432,
+                            "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_relative": "apps/maskies/src/Maskies.sol",
+                            "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_short": "apps/maskies/src/Maskies.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                              30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+                              42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                              54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                              66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                              78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                              90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101,
+                              102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+                              112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+                              122, 123, 124, 125, 126, 127, 128, 129, 130, 131,
+                              132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                              142, 143, 144, 145, 146, 147, 148, 149, 150, 151,
+                              152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                              162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
+                              172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+                              182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+                              192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                              202, 203, 204, 205, 206, 207, 208, 209, 210, 211,
+                              212, 213, 214, 215, 216
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdrawAll()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "WithdrawAll(contractBalance)",
+                  "source_mapping": {
+                    "start": 7289,
+                    "length": 33,
+                    "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_relative": "apps/maskies/src/Maskies.sol",
+                    "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                    "filename_short": "apps/maskies/src/Maskies.sol",
+                    "is_dependency": false,
+                    "lines": [192],
+                    "starting_column": 9,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawAll",
+                      "source_mapping": {
+                        "start": 6971,
+                        "length": 358,
+                        "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_relative": "apps/maskies/src/Maskies.sol",
+                        "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                        "filename_short": "apps/maskies/src/Maskies.sol",
+                        "is_dependency": false,
+                        "lines": [185, 186, 187, 188, 189, 190, 191, 192, 193],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Maskies",
+                          "source_mapping": {
+                            "start": 616,
+                            "length": 7432,
+                            "filename_used": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_relative": "apps/maskies/src/Maskies.sol",
+                            "filename_absolute": "/Users/enzoevers/Documents/Git/byont-ventures/apps/maskies/src/Maskies.sol",
+                            "filename_short": "apps/maskies/src/Maskies.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+                              30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+                              42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+                              54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                              66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+                              78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                              90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101,
+                              102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+                              112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+                              122, 123, 124, 125, 126, 127, 128, 129, 130, 131,
+                              132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+                              142, 143, 144, 145, 146, 147, 148, 149, 150, 151,
+                              152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+                              162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
+                              172, 173, 174, 175, 176, 177, 178, 179, 180, 181,
+                              182, 183, 184, 185, 186, 187, 188, 189, 190, 191,
+                              192, 193, 194, 195, 196, 197, 198, 199, 200, 201,
+                              202, 203, 204, 205, 206, 207, 208, 209, 210, 211,
+                              212, 213, 214, 215, 216
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdrawAll()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in Maskies.withdrawAll() (apps/maskies/src/Maskies.sol#185-193):\n\tExternal calls:\n\t- (success) = address(owner()).call{value: contractBalance}() (apps/maskies/src/Maskies.sol#189)\n\tEvent emitted after the call(s):\n\t- WithdrawAll(contractBalance) (apps/maskies/src/Maskies.sol#192)\n",
+              "markdown": "Reentrancy in [Maskies.withdrawAll()](apps/maskies/src/Maskies.sol#L185-L193):\n\tExternal calls:\n\t- [(success) = address(owner()).call{value: contractBalance}()](apps/maskies/src/Maskies.sol#L189)\n\tEvent emitted after the call(s):\n\t- [WithdrawAll(contractBalance)](apps/maskies/src/Maskies.sol#L192)\n",
+              "first_markdown_element": "apps/maskies/src/Maskies.sol#L185-L193",
+              "id": "9e55fa94c11d67e14de4921eaa0366c6b534f40a986cc8f35c15e6b4480a2453",
+              "check": "reentrancy-events",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}
