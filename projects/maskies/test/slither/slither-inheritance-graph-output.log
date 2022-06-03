@@ -1,0 +1,29 @@
+Compilation warnings/errors on apps/maskies/src/Maskies.sol:
+Warning: Unnamed return variable can remain unassigned when the function is called when "Maskies" is the most derived contract. Add an explicit return with value to all non-reverting code paths or name the variable.
+   --> node_modules/erc721psi/contracts/ERC721Psi.sol:477:80:
+    |
+477 |     function tokenByIndex(uint256 index) public view virtual override returns (uint256) {
+    |                                                                                ^^^^^^^
+
+Warning: Unnamed return variable can remain unassigned. Add an explicit return with value to all non-reverting code paths or name the variable.
+  --> node_modules/solidity-bits/contracts/BitMaps.sol:82:87:
+   |
+82 |     function scanForward(BitMap storage bitmap, uint256 index) internal view returns (uint256) {
+   |                                                                                       ^^^^^^^
+
+Warning: Unused local variable.
+   --> node_modules/erc721psi/contracts/ERC721Psi.sol:102:25:
+    |
+102 |         (address owner, uint256 tokenIdBatchHead) = _ownerAndBatchHeadOf(tokenId);
+    |                         ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning: Contract code size is 25784 bytes and exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.
+  --> apps/maskies/src/Maskies.sol:18:1:
+   |
+18 | contract Maskies is ERC721Psi, Pausable, Ownable, ReentrancyGuard, WhiteList {
+   | ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Inheritance Graph: apps/maskies/src/Maskies.sol.inheritance-graph.dot
+
+apps/maskies/src/Maskies.sol analyzed (20 contracts)
